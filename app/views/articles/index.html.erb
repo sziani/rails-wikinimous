@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Wikinimous</a>
+</nav>
+
+<ul style="list-style-type:none;">
+  <% @articles.each do |article| %>
+  <li class="text-center"><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+</ul>
